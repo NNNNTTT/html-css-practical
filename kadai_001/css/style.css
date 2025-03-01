@@ -162,6 +162,9 @@ footer{
     .works-content li:last-of-type{
         margin-bottom: 0;
     }
+    .works-content .text{
+        text-align: center;
+    }
     /*フッター*/
     footer{
         margin-bottom: 60px;
