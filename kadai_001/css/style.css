@@ -1,0 +1,173 @@
+/*共通*/
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+    width: 100%;
+}
+body{
+    color: #000000;
+    font-family: "Noto Sans JP", sans-serif;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    vertical-align: bottom;
+}
+li{
+    list-style: none;
+}
+a{
+    color: #000000;
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.7;
+}
+.section-title{
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.name{
+    font-size: 24px;
+    font-weight: 700;
+}
+.text{
+    font-size: 18px;
+    margin: 10px 0;
+}
+/*ヘッダー*/
+header{
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+h1,nav ul{
+    font-size: 34px;
+}
+h1{
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+/*ナビゲーション*/
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+nav ul li:nth-child(1){
+    margin-right: 20px;
+}
+/*メインビジュアル*/
+.mainvisual{
+    margin-bottom: 30px;
+}
+.wrapper{
+    max-width: 860px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+/*このサイトについて*/
+#about{
+    margin-bottom: 80px;
+}
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-img img{
+    border-radius: 50%;
+}
+.about-text li{
+    list-style: disc;
+}
+.about-text .text{
+    margin: 0;
+}
+/*ワークス*/
+#works{
+    margin-bottom: 80px;  
+}
+.works-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+footer{
+    margin-bottom: 80px;
+}
+.copy-light{
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+/*---------------------------------------------------
+スマートフォン
+---------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+    /*共通*/
+    .section-title{
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+    /*ヘッダー*/
+    header{
+        padding: 0 10px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    nav ul{
+        font-size: 21px;
+        padding-left: 0;
+    }
+    /*このサイトについて*/
+    #about{
+        margin-bottom: 60px;
+    }
+    .about-content{
+        flex-direction: column;
+    }
+    /*ワークス*/
+    #works{
+        margin-bottom: 60px;  
+    }
+    .works-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    .works-content li{
+        margin-bottom: 40px;
+        max-width: 358px;
+    }
+    .works-content li:last-of-type{
+        margin-bottom: 0;
+    }
+    /*フッター*/
+    footer{
+        margin-bottom: 60px;
+    }
+}
+
+
+
+
